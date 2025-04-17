@@ -2,17 +2,6 @@
 
 An interactive stock market data visualization tool that helps analyze various stock data indicators with advanced charting features. This project allows users to view multiple financial indicators such as SMA, EMA, RSI, MACD, and others, over customizable date ranges for different stock symbols.
 
-### 🔲 Dark Mode Interface
-<img src="https://raw.githubusercontent.com/pavit15/chartsanalyzer/main/images/darkmode.jpg" width="600"/>
-
-### ⬜ Light Mode Interface
-<img src="https://raw.githubusercontent.com/pavit15/chartsanalyzer/main/images/lightmode.jpg" width="600"/>
-
-### 📈 Chart with Indicators
-<img src="https://raw.githubusercontent.com/pavit15/chartsanalyzer/main/images/plots.jpg" width="600"/>
-
-
-
 ## Project Features
 
 - **Stock Data Visualization**: Interactive charts displaying stock prices, trading volumes, and various indicators.
@@ -20,6 +9,15 @@ An interactive stock market data visualization tool that helps analyze various s
 - **Custom Date Range**: Select any start and end date for stock data analysis.
 - **Dark Mode**: Toggle dark mode for better user experience.
 - **Comparison**: Add stocks for side-by-side comparison on the same chart.
+
+### Dark Mode Interface
+<img src="https://raw.githubusercontent.com/pavit15/chartsanalyzer/main/images/darkmode.jpg" width="600"/>
+
+### Light Mode Interface
+<img src="https://raw.githubusercontent.com/pavit15/chartsanalyzer/main/images/lightmode.jpg" width="600"/>
+
+### Chart with Indicators
+<img src="https://raw.githubusercontent.com/pavit15/chartsanalyzer/main/images/plots.jpg" width="600"/>
 
 ## Tech Stack
 
