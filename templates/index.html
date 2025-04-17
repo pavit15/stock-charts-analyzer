@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Data Visualization</title>
+    <meta name="description" content="Interactive stock market data visualization and comparison tool">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <header>
+        <h1>Stock Data Charts for Analysis</h1>
+        <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌓</button>
+    </header>
+    
+    <div class="container">
+        <div class="controls">
+            <div class="form-group">
+                <select id="symbol" aria-label="Stock symbol">
+                    <option value="">Select a stock</option>
+                </select>
+                
+                <input type="date" id="start" aria-label="Start date">
+                <input type="date" id="end" aria-label="End date">
+                
+                <button id="loadDataBtn" aria-label="Load data">Load Data</button>
+                <button id="addStockBtn" aria-label="Add to comparison">Add to Comparison</button>
+            </div>
+            
+            <div id="comparedStocksContainer"></div>
+            
+            <div class="indicators-toggles">
+                <div class="toggle-group">
+                    <input type="checkbox" id="toggle-volume" checked>
+                    <label for="toggle-volume">Volume</label>
+                    <span class="indicator-tooltip">Trading activity measurement</span>
+                </div>
+                <div class="toggle-group">
+                    <input type="checkbox" id="toggle-sma" checked>
+                    <label for="toggle-sma">SMA</label>
+                    <span class="indicator-tooltip">Simple Moving Average (5-day)</span>
+                </div>
+                <div class="toggle-group">
+                    <input type="checkbox" id="toggle-ema" checked>
+                    <label for="toggle-ema">EMA</label>
+                    <span class="indicator-tooltip">Exponential Moving Average (5-day)</span>
+                </div>
+                <div class="toggle-group">
+                    <input type="checkbox" id="toggle-rsi" checked>
+                    <label for="toggle-rsi">RSI</label>
+                    <span class="indicator-tooltip">Relative Strength Index (14-day)</span>
+                </div>
+                <div class="toggle-group">
+                    <input type="checkbox" id="toggle-macd" checked>
+                    <label for="toggle-macd">MACD</label>
+                    <span class="indicator-tooltip">Moving Average Convergence Divergence</span>
+                </div>
+                <div class="toggle-group">
+                    <input type="checkbox" id="toggle-signal" checked>
+                    <label for="toggle-signal">Signal</label>
+                    <span class="indicator-tooltip">MACD Signal Line (9-day)</span>
+                </div>
+                <div class="toggle-group">
+                    <input type="checkbox" id="toggle-histogram" checked>
+                    <label for="toggle-histogram">Histogram</label>
+                    <span class="indicator-tooltip">MACD - Signal Line</span>
+                </div>
+                <div class="toggle-group">
+                    <input type="checkbox" id="toggle-atr" checked>
+                    <label for="toggle-atr">ATR</label>
+                    <span class="indicator-tooltip">Average True Range (14-day)</span>
+                </div>
+                <div class="toggle-group">
+                    <input type="checkbox" id="toggle-upperBand" checked>
+                    <label for="toggle-upperBand">Upper Band</label>
+                    <span class="indicator-tooltip">Bollinger Upper Band</span>
+                </div>
+                <div class="toggle-group">
+                    <input type="checkbox" id="toggle-lowerBand" checked>
+                    <label for="toggle-lowerBand">Lower Band</label>
+                    <span class="indicator-tooltip">Bollinger Lower Band</span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="charts">
+            
+            
+            <div class="chart-container">
+                <canvas id="volumeChart" aria-label="Volume chart"></canvas>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="smaChart" aria-label="SMA chart"></canvas>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="emaChart" aria-label="EMA chart"></canvas>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="rsiChart" aria-label="RSI chart"></canvas>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="macdChart" aria-label="MACD chart"></canvas>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="signalChart" aria-label="Signal chart"></canvas>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="histogramChart" aria-label="Histogram chart"></canvas>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="atrChart" aria-label="ATR chart"></canvas>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="upperBandChart" aria-label="Upper band chart"></canvas>
+            </div>
+            
+            <div class="cha
+            rt-container">
+                <canvas id="lowerBandChart" aria-label="Lower band chart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Stock Data Visualization</p>
+    </footer>
+    
+    <script src="../static/script.js"></script>
+</body>
+</html>
+
