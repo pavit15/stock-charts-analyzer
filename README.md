@@ -78,19 +78,6 @@ Once the application is running, open your browser and visit:
 ```bash
 http://localhost:5000
 ```
-
-## Future Scope
-The following features are planned for future updates to enhance the project’s functionality:
-
-- **Predictive Modeling**: Implement machine learning models to predict stock price movements based on historical data, using algorithms like Random Forests, SVM, and LSTM networks.
-- **Sentiment Analysis**: Integrate sentiment analysis of news articles and social media to predict stock price trends based on public sentiment.
-- **Anomaly Detection**: Use unsupervised learning techniques like Isolation Forest or DBSCAN to detect anomalies in stock data and highlight potential investment opportunities or risks.
-- **Portfolio Optimization**: Implement an ML-based portfolio optimization tool using techniques like Markowitz Efficient Frontier and Monte Carlo simulations.
-- **Backtesting Framework**: Develop a backtesting feature to evaluate the effectiveness of trading strategies using historical stock data.
-- **Advanced Technical Indicators**: Add more advanced technical indicators such as Fibonacci Retracements, Parabolic SAR, and Ichimoku Cloud for deeper analysis.
-- **Real-time Data Integration**: Integrate real-time stock market data feeds to perform real-time analysis and trigger alerts for price movements or indicator thresholds.
-- **Personalized Stock Recommendations**: Use collaborative filtering or content-based recommendation systems to provide personalized stock recommendations for users based on their preferences and historical behavior.
-
   
 ## Contributing
 
@@ -111,8 +98,20 @@ If you'd like to contribute to this project, feel free to fork the repository an
 5. Push to your branch:
    ```bash
    git push origin feature-name
-  ```
+    ```
 6. Open a pull request: Go to the repository on GitHub and click on "Compare & pull request" to submit your changes.
+
+## Future Scope
+The following features are planned for future updates to enhance the project’s functionality:
+
+- **Predictive Modeling**: Implement machine learning models to predict stock price movements based on historical data, using algorithms like Random Forests, SVM, and LSTM networks.
+- **Sentiment Analysis**: Integrate sentiment analysis of news articles and social media to predict stock price trends based on public sentiment.
+- **Anomaly Detection**: Use unsupervised learning techniques like Isolation Forest or DBSCAN to detect anomalies in stock data and highlight potential investment opportunities or risks.
+- **Portfolio Optimization**: Implement an ML-based portfolio optimization tool using techniques like Markowitz Efficient Frontier and Monte Carlo simulations.
+- **Backtesting Framework**: Develop a backtesting feature to evaluate the effectiveness of trading strategies using historical stock data.
+- **Advanced Technical Indicators**: Add more advanced technical indicators such as Fibonacci Retracements, Parabolic SAR, and Ichimoku Cloud for deeper analysis.
+- **Real-time Data Integration**: Integrate real-time stock market data feeds to perform real-time analysis and trigger alerts for price movements or indicator thresholds.
+- **Personalized Stock Recommendations**: Use collaborative filtering or content-based recommendation systems to provide personalized stock recommendations for users based on their preferences and historical behavior.
 
 
 
