@@ -121,8 +121,3 @@ The following features are planned for future updates to enhance the project’s
 - **Advanced Technical Indicators**: Add more advanced technical indicators such as Fibonacci Retracements, Parabolic SAR, and Ichimoku Cloud for deeper analysis.
 - **Real-time Data Integration**: Integrate real-time stock market data feeds to perform real-time analysis and trigger alerts for price movements or indicator thresholds.
 - **Personalized Stock Recommendations**: Use collaborative filtering or content-based recommendation systems to provide personalized stock recommendations for users based on their preferences and historical behavior.
-
-
-
-
-
