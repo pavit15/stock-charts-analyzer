@@ -87,28 +87,7 @@ Once the application is running, open your browser and visit:
 ```bash
 http://localhost:5000
 ```
-  
-## Contributing
 
-If you'd like to contribute to this project, feel free to fork the repository and create a pull request with your changes. Please make sure your contributions align with the project's goals and follow these steps:
-
-1. **Fork the repository**: Click on the "Fork" button at the top-right of the repository page to create your copy of the repository.
-   
-2. **Create a new branch**: 
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Make your changes: Make the necessary changes to the code or documentation.
-
-4. Commit your changes:
-  ```bash
-   git commit -am 'Add new feature'
-  ```
-5. Push to your branch:
-   ```bash
-   git push origin feature-name
-    ```
-6. Open a pull request: Go to the repository on GitHub and click on "Compare & pull request" to submit your changes.
 
 ## Future Scope
 The following features are planned for future updates to enhance the project’s functionality:
