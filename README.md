@@ -38,7 +38,6 @@ An interactive stock market data visualization tool that helps analyze various s
   - **Plotly** for creating interactive visualizations.
 
 ## How to use 
-
 To run this project locally, follow these steps:
 
 ### 1. Clone the repository
